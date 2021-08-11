@@ -15,7 +15,7 @@ public class JavaMail {
 			JavaMailUtil.sendMails(str);
 		}
 		
-		//JavaMailUtil.sendMails("dddivyadharshini2525@gmail.com");
+		//JavaMailUtil.sendMails("");
 		//JavaMailUtil.sendMails("imranhash510@gmail.com");
 		//JavaMailUtil.sendMails("abdulthedon007@gmail.com");
 	}
