@@ -21,7 +21,9 @@ public class JavaMailUtil {
 	}
 
  public static void sendMails(String recipient) throws Exception {
-	 System.out.println("Preparing to send Email...");
+	 String[] splittedArray = recipient.split("@");
+		String name = splittedArray[0];
+	 System.out.println("Preparing to send Email...to..."+name);
 	 Properties properties=new Properties();
 	 	
 	 	//mail.smtp.auth  //  if it is a gmail then for (Authentication) it is madatory to have user name and password to login to this 
