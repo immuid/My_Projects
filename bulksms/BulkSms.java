@@ -14,8 +14,23 @@ public class BulkSms {
 	
 	public static void sendSms(String message,String number)
 	{
-//		System.out.println(message);
-//		System.out.println(number);
+		public static void main(String[] args) {
+		System.out.println("Program started.....");
+		 ResourceBundle rb=ResourceBundle.getBundle("numbers",new Locale("en"));// Locale.getdefault()
+		 
+			String s[]= {rb.getString("n1"),//used properties 
+						rb.getString("n2"),
+						rb.getString("n3")};
+			
+			for(String str:s) {
+				BulkSms.sendSms("Greetings from Haris Info Tech  ..."
+						+"from Mr.ImranAhmed"
+						+ new Date().toLocaleString(), str);
+			}
+	
+		
+	}
+
 		try
 		{
 		String apiKey="64MYrQ7fRqyKn2HOXcwS0lZbJ5z9gCTdpiavGED1WUs8IAPBxtA0vLVXeRwOWHsbBEgMS6Z8YKr2JUny";
@@ -72,20 +87,5 @@ public class BulkSms {
 		
 	}
 	
-	public static void main(String[] args) {
-		System.out.println("Program started.....");
-		 ResourceBundle rb=ResourceBundle.getBundle("numbers",new Locale("en"));// Locale.getdefault()
-		 
-			String s[]= {rb.getString("n1"),//used properties 
-						rb.getString("n2"),
-						rb.getString("n3")};
-			
-			for(String str:s) {
-				BulkSms.sendSms("Greetings from Haris Info Tech  ..."
-						+"from Mr.ImranAhmed"
-						+ new Date().toLocaleString(), str);
-			}
 	
-		
-	}
 }
