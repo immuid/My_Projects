@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE taglib>
+<taglib>
+  <tlibversion>1.0</tlibversion>
+  <jspversion>1.1</jspversion>
+  <shortname>my tag library</shortname>
+  
+  <tag>
+    <name>checkUser</name>
+    <tagclass>com.CheckUserTag</tagclass>
+    <bodycontent>empty</bodycontent>
+    <attribute>
+      <name>uname</name>
+      <required>true</required>
+      <rtexprvalue>true</rtexprvalue>
+    </attribute>
+    <attribute>
+      <name>upass</name>
+      <required>true</required>
+      <rtexprvalue>true</rtexprvalue>
+    </attribute>
+  </tag>
+</taglib>
+
+	
